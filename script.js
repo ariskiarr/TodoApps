@@ -2,7 +2,7 @@ const todos = [];
 const RENDER_EVENT = 'render-todo';
 
 document.addEventListener('DOMContentLoaded', function () {
-    const submitForm = document.getElementById('form'); // Sesuai dengan ID di HTML
+    const submitForm = document.getElementById('form'); 
     submitForm.addEventListener('submit', function (event) {
         event.preventDefault();
         addTodo();
@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function addTodo() {
-    const textTodo = document.getElementById('title').value; // Sesuai dengan ID di HTML
+    const textTodo = document.getElementById('title').value; 
     const timestamp = document.getElementById('date').value;
     
     const generatedID = +new Date();
